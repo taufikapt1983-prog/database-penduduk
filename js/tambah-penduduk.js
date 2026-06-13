@@ -5,38 +5,72 @@ async function simpanPenduduk(){
 
     const payload = {
 
-        nik :
-        document.getElementById("nik").value,
+    nik: document.getElementById("nik").value,
+    no_kk: document.getElementById("no_kk").value,
+    nama: document.getElementById("nama").value,
+    jk: document.getElementById("jk").value,
 
-        no_kk :
-        document.getElementById("no_kk").value,
+    tempat_lahir:
+    document.getElementById("tempat_lahir").value,
 
-        nama :
-        document.getElementById("nama").value,
+    tanggal_lahir:
+    document.getElementById("tanggal_lahir").value,
 
-        jk :
-        document.getElementById("jk").value,
+    agama:
+    document.getElementById("agama").value,
 
-        tempat_lahir:"",
-        tanggal_lahir:"",
-        agama:"",
-        pendidikan:"",
-        pekerjaan:"",
-        status_kawin:"",
-        status_hubungan:"",
-        kewarganegaraan:"WNI",
-        alamat:"",
-        rt:"",
-        rw:"",
-        dusun:"",
-        desa:"",
-        kecamatan:"",
-        kabupaten:"",
-        no_hp:"",
-        bpjs:"",
-        koordinat_rumah:""
+    pendidikan:
+    document.getElementById("pendidikan").value,
 
-    };
+    pekerjaan:
+    document.getElementById("pekerjaan").value,
+
+    status_kawin:
+    document.getElementById("status_kawin").value,
+
+    status_hubungan:
+    document.getElementById("status_hubungan").value,
+
+    kewarganegaraan:
+    document.getElementById("kewarganegaraan").value,
+
+    alamat:
+    document.getElementById("alamat").value,
+
+    rt:
+    document.getElementById("rt").value,
+
+    rw:
+    document.getElementById("rw").value,
+
+    dusun:
+    document.getElementById("dusun").value,
+
+    desa:
+    document.getElementById("desa").value,
+
+    kecamatan:
+    document.getElementById("kecamatan").value,
+
+    kabupaten:
+    document.getElementById("kabupaten").value,
+
+    status_penduduk:
+    document.getElementById("status_penduduk").value,
+
+    no_hp:
+    document.getElementById("no_hp").value,
+
+    bpjs:
+    document.getElementById("bpjs").value,
+
+    koordinat_rumah:
+    document.getElementById("koordinat_rumah").value,
+
+    foto_rumah:
+    document.getElementById("foto_rumah").value
+
+};
 
     const response = await fetch(
 
