@@ -59,8 +59,10 @@ async function simpanPenduduk(){
 
     if(data.status){
 
+    document.getElementById("nik").value = "";
     document.getElementById("no_kk").value = "";
-    document.getElementById("kepala_keluarga").value = "";
+    document.getElementById("nama").value = "";
+    document.getElementById("jk").value = "";
     document.getElementById("alamat").value = "";
     document.getElementById("rt").value = "";
     document.getElementById("rw").value = "";
