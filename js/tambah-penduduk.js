@@ -93,19 +93,16 @@ async function simpanPenduduk(){
 
     if(data.status){
 
-    document.getElementById("nik").value = "";
-    document.getElementById("no_kk").value = "";
-    document.getElementById("nama").value = "";
-    document.getElementById("jk").value = "";
-    document.getElementById("alamat").value = "";
-    document.getElementById("rt").value = "";
-    document.getElementById("rw").value = "";
-    document.getElementById("dusun").value = "";
-    document.getElementById("desa").value = "";
-    document.getElementById("kecamatan").value = "";
-    document.getElementById("kabupaten").value = "";
-    document.getElementById("no_hp").value = "";
+    document.querySelectorAll("input").forEach(
+        input => input.value = ""
+    );
 
-    document.getElementById("no_kk").focus();
+    document.getElementById("jk").selectedIndex = 0;
+    document.getElementById("agama").selectedIndex = 0;
+    document.getElementById("status_kawin").selectedIndex = 0;
+    document.getElementById("status_hubungan").selectedIndex = 0;
+    document.getElementById("kewarganegaraan").selectedIndex = 0;
+    document.getElementById("status_penduduk").selectedIndex = 0;
 
+    document.getElementById("nik").focus();
 }
