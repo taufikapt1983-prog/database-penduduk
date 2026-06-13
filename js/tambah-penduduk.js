@@ -152,3 +152,5 @@ async function simpanPenduduk(){
 
     document.getElementById("nik").focus();
 }
+
+}
