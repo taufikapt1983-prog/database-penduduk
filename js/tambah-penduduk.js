@@ -1,5 +1,49 @@
 const API_URL =
 "https://script.google.com/macros/s/AKfycbx_7IcjH61WK90ffxDRmrLA0YUGVy2Ra6ioTY4FK7MpDUS7odGcRFIH-8QRz4Bdk-Rf7w/exec";
+async function ambilDataKK(){
+
+    const noKK =
+    document.getElementById("no_kk").value;
+
+    const response =
+    await fetch(
+        API_URL +
+        "?action=getKK&no_kk=" +
+        noKK
+    );
+
+    const hasil =
+    await response.json();
+
+    if(!hasil.status){
+        return;
+    }
+
+    document.getElementById("alamat").value =
+    hasil.data.alamat;
+
+    document.getElementById("rt").value =
+    hasil.data.rt;
+
+    document.getElementById("rw").value =
+    hasil.data.rw;
+
+    document.getElementById("dusun").value =
+    hasil.data.dusun;
+
+    document.getElementById("desa").value =
+    hasil.data.desa;
+
+    document.getElementById("kecamatan").value =
+    hasil.data.kecamatan;
+
+    document.getElementById("kabupaten").value =
+    hasil.data.kabupaten;
+
+    document.getElementById("no_hp").value =
+    hasil.data.no_hp;
+
+}
 
 async function simpanPenduduk(){
 
