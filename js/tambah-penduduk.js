@@ -1,8 +1,6 @@
 const API_URL =
 "https://script.google.com/macros/s/AKfycbx_7IcjH61WK90ffxDRmrLA0YUGVy2Ra6ioTY4FK7MpDUS7odGcRFIH-8QRz4Bdk-Rf7w/exec";
 async function ambilDataKK(){
-
-    alert("fungsi ambilDataKK jalan");
     
     const noKK =
     document.getElementById("no_kk").value;
