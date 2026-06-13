@@ -57,4 +57,19 @@ async function simpanPenduduk(){
     .innerHTML =
     data.pesan;
 
+    if(data.status){
+
+    document.getElementById("no_kk").value = "";
+    document.getElementById("kepala_keluarga").value = "";
+    document.getElementById("alamat").value = "";
+    document.getElementById("rt").value = "";
+    document.getElementById("rw").value = "";
+    document.getElementById("dusun").value = "";
+    document.getElementById("desa").value = "";
+    document.getElementById("kecamatan").value = "";
+    document.getElementById("kabupaten").value = "";
+    document.getElementById("no_hp").value = "";
+
+    document.getElementById("no_kk").focus();
+
 }
